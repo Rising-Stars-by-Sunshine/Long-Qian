@@ -18,5 +18,5 @@ A computer science student interested in the combination of the two fields
   This repo is for the assignments of COMSCI/ECON 206 Computational Microeconomics taught by Prof. Luyao Zhang at DKU in 2024 Spring.
 
 ## Table of Contents
-[CSEcon](CSEcon)
-[Advance_CSECON](Advance_CSECON)
+- [CSEcon](CSEcon)
+- [Advance_CSECON](Advance_CSECON)
