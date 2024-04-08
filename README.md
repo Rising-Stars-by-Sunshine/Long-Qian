@@ -1,6 +1,6 @@
 # CS206 Repo for Long Qian
 
-![Headshot](images/Headshot.webg)   
+![Headshot](images/Headshot.jpg)   
 
 # Hi guys, I'm Long Qian 
 A computer science student interested in the combination of the two fields
