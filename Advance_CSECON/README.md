@@ -51,15 +51,24 @@ Second, various practical development tools, such as GitHub Copilot, can be inte
 Third, make oTree have more types of data and have analysis tools to support more detailed behavior tracking and participant interaction analysis. It includes, but is not limited to, advanced data such as participants’ decision times, interaction patterns, etc., which are essential for a deep understanding of human behavior in complicated strategic contexts. In addition, built-in data analysis and visualization tools are available, enabling researchers to conduct preliminary data analysis directly on the platform. More comprehensive data can significantly assist researchers in their research, such as in machine learning. Providing a greater variety of variables and more data can effectively improve the performance of training models.
 
 ![screenshot](images/screenshot.jpg)
+
 *Figure 1: A pain point*
+
 ![graph](images/graph.jpg)
+
 *Figure 2: Flowchat for Question 1*
 ### Question 2
-I want to use the trust game to illustrate some of MARL’s limitations. The trust game is a two-player game where one player (the investor) has a certain number of units of currency they can choose to invest in another player (the trustee). The amount invested increases during the pass-through, and the trustee decides how much to return to the investor. This game tests the decision-making process of trust and reward. The definition of environment in this game is very weak because, in the trust game, the two agents are completely independent. They don’t have any relevant background information, and they only know how much money is currently received, as in other games. For example, I deploy a game called gardner_chess in class. The agent can observe sufficient environmental information in each step, such as the types and positions of all pieces on the chessboard, to assist it in learning corresponding decisions. It makes it difficult for agents to learn how to obtain practical information from the current environment and make reasonable decisions in the training process. Second, different participants may adopt various strategies in the trust game based on their values and experiences. However, most of the current MARL algorithms adopt a “one-size-fits-all” approach, and it is difficult to customize the response strategy for each agent.
+I want to use the trust game to illustrate some of MARL’s limitations. The trust game is a two-player game where one player (the investor) has a certain number of units of currency they can choose to invest in another player (the trustee). The amount invested increases during the pass-through, and the trustee decides how much to return to the investor. This game tests the decision-making process of trust and reward. The definition of environment in this game is very weak because, in the trust game, the two agents are completely independent. They don’t have any relevant background information, and they only know how much money is currently received, not as in other games. For example, I deploy a game called gardner_chess in class. The agent can observe sufficient environmental information in each step, such as the types and positions of all pieces on the chessboard, to assist it in learning corresponding decisions. It makes it difficult for agents to learn how to obtain practical information from the current environment and make reasonable decisions in the training process. Second, different participants may adopt various strategies in the trust game based on their values and experiences. However, most of the current MARL algorithms adopt a “one-size-fits-all” approach, and it is difficult to customize the response strategy for each agent.
 
 To improve MARL agents in this game, I defined state, action, and reward according to my understanding. State: The investor’s investment amount, the trustee’s historical return behavior, transaction history, and any additional environmental factors that can be added, such as reputation systems or third-party evaluation information. By incorporating these factors into the state definition, the agent can obtain more comprehensive information about the game environment and make more accurate decisions. Action: For investors, the action is the amount of money invested. For the trustee, the action is to determine the amount to be returned to the investor. Reward: The reward system should encourage long-term trust and cooperation, so for the investor, when the amount returned by the trustee is above a particular value, the investor gets a positive reward. The trustee will be rewarded based on success in building a long-term trust relationship (for example, through successive rounds of high returns). Such a reward mechanism encourages agents to explore and maintain cooperative behavior for maximum return.
 
 ![chess](images/chess.jpg)
+
+*Figure 3: Running the chess game on PettingZoo*
+
+！[mindmap2](images/mindmap2.jpg)
+
+*Figure 4: Mindmap for Question 2*
 ### Question 3(Luo et al. 2023)
 1. The main research questions of this paper include two key challenges: the first is how to design a practical incentive mechanism to ensure that federated learning converges to a globally optimal unbiased model with partial customer participation. The second question is how to design an effective payment strategy that incentivizes customers to actively participate in federated learning by measuring each customer’s level of engagement and the contribution of local data to model performance.
 
@@ -76,7 +85,16 @@ This study proposes a novel incentive mechanism to motivate customers to partici
 5. Participants with specific psychological heuristics may introduce biases or preferences into the decision-making process that affect their decision-making strategies in federal learning scenarios. Participants’ psychological heuristics may influence their response to incentives in federated learning, thereby altering their levels of engagement and decision-making strategies. At the same time, different versions of AI may exhibit varying degrees of bounded rationality, which may affect their role and behavior in a federated learning system, which in turn affects overall system performance and outcomes. In my mini-experiment, GPT4.0, as a participant in the experiment, made its decisions based on three main factors: the intrinsic value to the global model, the local cost of participation, and the pricing strategy set by the server. Different versions of AI have different training parameters, so the bounded rationality displayed in decision-making will be different, which will have different effects on the experimental results.
 
 ![chatgpt1](images/chatgpt1.jpg)
+
+*Figure 5: The responses of ChatGPT*
+
 ![chatgpt2](images/chatgpt2.jpg)
+
+*Figure 6: The responses of ChatGPT*
+
+![mindmap3](images/mindmap3.jpg)
+
+*Figure 6: Mindmap for Question 3*
 ## Bibliography
 Luo, Bing, Yutong Feng, Shiqiang Wang, Jianwei Huang, and Leandros Tassiulas. 2023. “Incentive Mechanism Design for Unbiased Federated Learning with Randomized Client Participation.” ArXiv (Cornell University), April. https://doi.org/10.48550/arxiv.2304.07981.
 
