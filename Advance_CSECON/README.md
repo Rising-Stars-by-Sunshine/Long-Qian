@@ -66,7 +66,7 @@ To improve MARL agents in this game, I defined state, action, and reward accordi
 
 *Figure 3: Running the chess game on PettingZoo*
 
-！[mindmap2](images/mindmap2.jpg)
+![mindmap2](images/mindmap2.jpg)
 
 *Figure 4: Mindmap for Question 2*
 ### Question 3(Luo et al. 2023)
@@ -94,7 +94,7 @@ This study proposes a novel incentive mechanism to motivate customers to partici
 
 ![mindmap3](images/mindmap3.jpg)
 
-*Figure 6: Mindmap for Question 3*
+*Figure 7: Mindmap for Question 3*
 ## Bibliography
 Luo, Bing, Yutong Feng, Shiqiang Wang, Jianwei Huang, and Leandros Tassiulas. 2023. “Incentive Mechanism Design for Unbiased Federated Learning with Randomized Client Participation.” ArXiv (Cornell University), April. https://doi.org/10.48550/arxiv.2304.07981.
 
